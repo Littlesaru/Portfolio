@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .box-shadow {
+      box-shadow: 0px 4px 20px 0px #6d6d6d;
+    }
+    .text-shadow:hover {
+      text-shadow: 2px 2px 4px #f1f1f1b3;
+    }
+    .navbar a {
+      animation: slideTop 1s ease forwards;
+      animation-delay: calc(0.2s * var(--a));
+    }
+    @keyframes slideTop {
+      0% {
+        transform: translateY(100px);
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .home-content p {
+      animation: slideLeft 1s ease 1s forwards;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100px);
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .social-media a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      border: 2px solid rgb(225, 228, 228);
+      border-radius: 50%;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      transition: 0.5s ease;
+      opacity: 0;
+      animation: slideRight 1s ease 1s forwards;
+      animation-delay: calc(0.2s * var(--a));
+    }
+    @keyframes slideRight {
+      0% {
+        transform: translateX(-200px);
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .social-media a:hover {
+      background-color: rgb(225, 228, 228);
+      color: #1f242d;
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+    }
+  </style>
+  <body class="bg-[#121615]">
+    <!-- Start Header -->
+    <div
+      class="flex justify-between p-[30px] bg-[#0D0D0D] text-[#ffffff] box-shadow sticky top-0 z-10"
+    >
+      <h1 class="text-2xl">My Portfolio</h1>
+      <div class="flex gap-[30px] items-center navbar">
+        <a
+          href="home_page.html"
+          style="--a: 1"
+          class=" text-shadow hover:underline hover:decoration-white"
+          >Home</a
+        >
+        <a
+          href="about_page.html"
+          style="--a: 2"
+          class=" text-shadow hover:underline hover:decoration-white"
+          >About</a
+        >
+        <a
+          href="skills_page.html"
+          style="--a: 3"
+          class=" text-shadow hover:underline hover:decoration-white"
+          >Skills</a
+        >
+        <a
+          href="project_page.html"
+          style="--a: 4"
+          class=" text-shadow hover:underline hover:decoration-white"
+          >Projects</a
+        >
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Body -->
+    <div class="flex my-[40px] relative">
+      <div class="social-media flex flex-col ml-[20px] gap-[30px] my-[30px]">
+        <a href="#" style="--a: 1"><i class="bx bxl-facebook"></i></a>
+        <a href="#" style="--a: 2"><i class="bx bxl-twitter"></i></a>
+        <a href="#" style="--a: 3"><i class="bx bxl-instagram"></i></a>
+        <a href="#" style="--a: 4"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div
+        class="w-[400px] h-[400px] bg-yellow-100 rounded-full m-auto box-shadow"
+      >
+        <div
+          class="w-[300px] h-[300px] text-center m-auto py-[120px] home-content"
+        >
+          <p class="text-[20px] font-bold">WELCOME TO MY</p>
+          <p class="text-3xl font-extrabold">PORTFOLIO</p>
+          <p class="p-[20px] leading-[150%]">
+            I am Arr Mann Win Myint, a digital designer & fronted developer
+            based in Somewhere. 
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[90%] h-[2px] bg-white m-auto absolute top-[90%] right-[60px] z-[-1]"
+      ></div>
+    </div>
+    <!-- Start Body  End-->
+
+    <div>
+      
+    </div>
+  </body>
+</html>
